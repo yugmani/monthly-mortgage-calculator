@@ -1,0 +1,122 @@
+<div id="app">
+  <h1>Home Mortgage Estimation</h1>
+  <div class="container">
+    <form>
+      <table>
+        <tr>
+          <td><label for="basePrice">Base Price:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="basePrice"
+              ,
+              id="basePrice"
+              ,
+              placeholder="$..."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="downPay">Down Payment:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="downPay"
+              id="downPay"
+              ,
+              placeholder="... % (percentage)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="intRate">Interest Rate:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="intRate"
+              ,
+              id="intRate"
+              placeholder="... % (percentage)"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="term">Term:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="term"
+              ,
+              id="term"
+              placeholder="30 years"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="homeIns">Homeowners Insurance:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="homeIns"
+              id="homeIns"
+              ,
+              placeholder="$118.75"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="propTax">Property Tax:</label></td>
+          <td>
+            <input
+              type="text"
+              ,
+              name="propTax"
+              id="propTax"
+              ,
+              placeholder="2 %"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hoa">HOA Dues:</label></td>
+          <td>
+            <input type="text" , name="hoa" id="hoa" , placeholder="$ 195" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <button id="btn-calc" class="btn">Calculate</button>
+    <div id="result">
+      <!-- <table>
+        <tr>
+          <td>Price of Home:$ ${homeBasePrice}</td>
+          <td>Down Payment:$ ${downPayment}</td>
+        </tr>
+
+        <tr>
+          <td>Loan Amount:$ ${loanAmount}</td>
+          <td>Interest Rate: ${rateInt} %</td>
+        </tr>
+        <tr>
+          <td>Term of Loan: ${termFixed} years</td>
+          <td>Principal & Interest:$ ${PI1}</td>
+        </tr>
+        <tr>
+          <td>Homeowners' Insurance:$ ${insuranceHome}</td>
+          <td>Property Tax: ${propTaxRate} %</td>
+        </tr>
+        <tr>
+          <td>HOA Dues:$ ${hoaDues}</td>
+          <td>Total Monthly Payment:$ ${mMortgage}</td>
+        </tr>
+      </table> -->
+    </div>
+  </div>
+</div>
